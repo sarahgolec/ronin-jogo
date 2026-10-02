@@ -1,0 +1,445 @@
+/* ============================================================
+   RONIN - PÁGINA DE DETALHES
+   ============================================================ */
+
+
+   .detalhes-container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 130px 0 80px;
+
+}
+
+
+/* ============================================================
+   CABEÇALHO
+   ============================================================ */
+
+.detalhes-header {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+.detalhes-header .sub-kanji {
+
+    display: block;
+
+    color: var(--red-primary);
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+    letter-spacing: 6px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.detalhes-header h1 {
+
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+
+    color: #fff;
+
+    text-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.detalhes-header p {
+
+    color: var(--text-muted);
+
+    font-size: 18px;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ============================================================
+   IMAGEM PRINCIPAL
+   ============================================================ */
+
+.detalhes-imagem {
+
+    width: 100%;
+
+    height: 480px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    border: 1px solid var(--border-color);
+
+    margin-bottom: 40px;
+
+    background: #000;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.detalhes-imagem img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.detalhes-imagem:hover img {
+
+    transform: scale(1.03);
+
+}
+
+
+/* ============================================================
+   ÁREA DE TEXTO
+   ============================================================ */
+
+.detalhes-texto {
+
+    width: 100%;
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 15px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.detalhes-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255, 183, 3, 0.1);
+
+    border: 1px solid rgba(255, 183, 3, 0.3);
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.detalhes-icon i {
+
+    color: var(--gold);
+
+    font-size: 2rem;
+
+}
+
+
+.detalhes-texto h2 {
+
+    color: #fff;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.detalhes-texto h2 i {
+
+    color: var(--gold);
+
+}
+
+
+.detalhes-texto > p {
+
+    color: var(--text-muted);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+}
+
+
+/* ============================================================
+   INFORMAÇÕES
+   ============================================================ */
+
+.informacoes-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin: 35px 0 40px;
+
+}
+
+
+.info-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+}
+
+
+.info-box > i {
+
+    color: var(--gold);
+
+    font-size: 1.7rem;
+
+}
+
+
+.info-box div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.info-box strong {
+
+    color: #fff;
+
+    font-size: 1rem;
+
+}
+
+
+.info-box span {
+
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+
+}
+
+
+/* ============================================================
+   SUBTÍTULO
+   ============================================================ */
+
+.subtitulo-detalhes {
+
+    margin-top: 20px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid var(--border-color);
+
+}
+
+
+/* ============================================================
+   BOTÃO VOLTAR
+   ============================================================ */
+
+.detalhes-voltar {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 40px;
+
+}
+
+
+/* ============================================================
+   SAKURA
+   ============================================================ */
+
+#sakuraCanvas {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 10;
+
+}
+
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    .detalhes-container {
+
+        width: 92%;
+
+        padding-top: 110px;
+
+    }
+
+
+    .detalhes-imagem {
+
+        height: 300px;
+
+    }
+
+
+    .detalhes-texto {
+
+        padding: 25px;
+
+    }
+
+
+    .detalhes-header h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+    .detalhes-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .informacoes-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .detalhes-texto > p {
+
+        font-size: 15px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .detalhes-container {
+
+        padding-top: 100px;
+
+    }
+
+
+    .detalhes-imagem {
+
+        height: 230px;
+
+    }
+
+
+    .detalhes-texto {
+
+        padding: 20px;
+
+    }
+
+
+    .detalhes-header h1 {
+
+        font-size: 1.8rem;
+
+    }
+
+
+    .detalhes-header .sub-kanji {
+
+        font-size: 1.1rem;
+
+        letter-spacing: 4px;
+
+    }
+
+
+    .info-box {
+
+        padding: 15px;
+
+    }
+
+}

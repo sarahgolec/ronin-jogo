@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RONIN - Detalhes</title>
+
+    <link rel="icon"
+          type="image/png"
+          href="capa-logo.img/icone_ronin.png">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="stylesheet"
+          href="detalhes.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SAKURA
+         ===================================================== -->
+
+    <canvas id="sakuraCanvas"></canvas>
+
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="logo-ronin.img/logo.png"
+                 alt="Logo SENAI"
+                 class="senai-logo"
+                 onerror="this.style.display='none'">
+
+            <span class="senai-badge">
+                SENAI
+            </span>
+
+            <span class="game-title">
+              
+            </span>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html#inicio">
+                    Início
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#gameplay">
+                    Gameplay
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#sobre">
+                    Sobre o Jogo
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#galeria">
+                    Galeria
+                </a>
+            </li>
+
+        </ul>
+
+
+        <a href="https://drive.google.com/drive/folders/18boa3KaS38dM6yq_KR6sW7Q8WxPp-STQ?usp=drive_link"
+           target="_blank"
+           class="btn-primary">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            JOGAR AGORA
+
+        </a>
+
+    </nav>
+
+
+    <!-- =====================================================
+         CONTEÚDO
+         ===================================================== -->
+
+    <main class="detalhes-container">
+
+
+        <!-- CABEÇALHO -->
+
+        <header class="detalhes-header">
+
+            <span class="sub-kanji" id="tema-kanji">
+                侍の道
+            </span>
+
+            <h1 id="tema-titulo">
+                Sobre Ronin
+            </h1>
+
+            <p id="tema-subtitulo">
+                Conheça mais sobre este elemento do jogo.
+            </p>
+
+        </header>
+
+
+        <!-- IMAGEM -->
+
+        <div class="detalhes-imagem">
+
+            <img id="tema-imagem"
+                 src="capa.img/capa.png"
+                 alt="Imagem do jogo Ronin">
+
+        </div>
+
+
+        <!-- TEXTO PRINCIPAL -->
+
+        <section class="detalhes-texto">
+
+            <div class="detalhes-icon">
+
+                <i id="tema-icone"
+                   class="fa-solid fa-scroll"></i>
+
+            </div>
+
+
+            <h2 id="tema-secao">
+                Sobre este elemento
+            </h2>
+
+
+            <p id="tema-descricao">
+                Carregando informações...
+            </p>
+
+
+            <!-- INFORMAÇÕES -->
+
+            <div class="informacoes-grid">
+
+                <div class="info-box">
+
+                    <i class="fa-solid fa-gamepad"></i>
+
+                    <div>
+
+                        <strong>
+                            Experiência
+                        </strong>
+
+                        <span id="tema-experiencia">
+                            Exploração e aventura
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <div>
+
+                        <strong>
+                            Destaque
+                        </strong>
+
+                        <span id="tema-destaque">
+                            Mundo inspirado no Japão Feudal
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- COMO FUNCIONA -->
+
+            <h2 class="subtitulo-detalhes">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                Como funciona?
+
+            </h2>
+
+
+            <p id="tema-como-funciona">
+                Informações sobre o elemento do jogo.
+            </p>
+
+
+            <!-- VOLTAR -->
+
+            <div class="detalhes-voltar">
+
+                <a href="index.html#sobre"
+                   class="btn-secondary">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Voltar para Sobre o Projeto
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="detalhes.js"></script>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

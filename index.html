@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>RONIN: O Caminho do Guerreiro</title>
+
+
+
+    <!-- Ícone da página -->
+
+    <link rel="icon" type="image/png" href="capa-logo.img/icone_ronin.png">
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <!-- FontAwesome -->
+
+    <link rel="stylesheet"
+
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- ==========================================================
+
+         CANVAS - FOLHAS DE SAKURA
+
+         ========================================================== -->
+
+
+
+    <canvas id="sakuraCanvas"></canvas>
+
+
+
+
+
+    <!-- ==========================================================
+
+         NAVBAR
+
+         ========================================================== -->
+
+
+
+    <nav class="navbar">
+
+
+
+        <div class="logo">
+
+
+
+            <img src="img/senai_logo.png"
+
+                 alt="Logo SENAI"
+
+                 class="senai-logo"
+
+                 onerror="this.style.display='none'">
+
+
+
+            <span class="senai-badge">
+
+                SENAI
+
+            </span>
+
+
+
+            <img src="capa-logo.img/icone_ronin.png" alt="logo">
+
+
+        </div>
+
+
+
+
+
+        <ul class="nav-links">
+
+
+
+            <li>
+
+                <a href="#inicio">Início</a>
+
+            </li>
+
+
+
+            <li>
+
+                <a href="#gameplay">Gameplay</a>
+
+            </li>
+
+
+
+            <li>
+
+                <a href="#sobre">Sobre o Jogo</a>
+
+            </li>
+
+
+
+            <li>
+
+                <a href="#galeria">Galeria</a>
+
+            </li>
+
+
+
+        </ul>
+
+
+
+
+
+        <a href="https://drive.google.com/file/d/12g2RZT1bnPXoTE5IBsE0bCsTkxRaPb2g/view?usp=sharing"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           class="btn-primary">
+
+
+
+            <i class="fa-solid fa-gamepad"></i>
+
+
+
+            JOGAR AGORA
+
+
+
+        </a>
+
+
+
+    </nav>
+
+
+
+
+
+    <!-- ==========================================================
+
+         HERO / BANNER PRINCIPAL
+
+         ========================================================== -->
+
+
+
+    <header id="inicio" class="hero">
+
+
+
+        <div class="hero-bg-wrapper">
+
+
+
+            <img src="capa.img/capa.png"
+
+                 alt="Capa do jogo Ronin"
+
+                 class="hero-bg-img">
+
+
+
+            <div class="hero-overlay"></div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="hero-content">
+
+
+
+            <span class="sub-kanji">
+
+                侍の道
+
+            </span>
+
+
+
+            <h1>
+
+                RONIN: O CAMINHO DO GUERREIRO
+
+            </h1>
+
+
+
+            <p>
+
+                Embarque em uma jornada pelo Japão Feudal,
+
+                enfrente inimigos, explore diferentes ambientes
+
+                e descubra os desafios do mundo de Ronin.
+
+            </p>
+
+
+
+
+
+            <div class="hero-buttons">
+
+
+
+                <!-- Iniciar jogo -->
+
+                <a href="https://drive.google.com/drive/folders/18boa3KaS38dM6yq_KR6sW7Q8WxPp-STQ?usp=drive_link"
+
+                   target="_blank"
+
+                   rel="noopener noreferrer"
+
+                   class="btn-hero">
+
+
+
+                    <i class="fa-solid fa-play"></i>
+
+
+
+                    Iniciar Jogo
+
+
+
+                </a>
+
+
+
+
+
+                <!-- Ir para galeria -->
+
+                <a href="#galeria"
+
+                   class="btn-secondary">
+
+
+
+                    <i class="fa-solid fa-images"></i>
+
+
+
+                    Ver Galeria
+
+
+
+                </a>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+    <!-- ==========================================================
+
+         GAMEPLAY / TRAILER
+
+         ========================================================== -->
+
+
+
+    <section id="gameplay" class="container video-section">
+
+
+
+        <h2>
+
+
+
+            <i class="fa-solid fa-clapperboard"></i>
+
+
+
+            Veja a Batalha em Ação
+
+
+
+        </h2>
+
+
+
+
+
+        <p class="subtitle">
+
+
+
+            Confira um pouco da experiência e dos cenários
+
+            presentes no jogo Ronin.
+
+
+
+        </p>
+
+
+
+
+
+        <div class="trailer-container">
+
+
+
+            <video controls
+
+                   poster="img/banner-ronin.png">
+
+
+
+                <source src="video/videos.mp4"
+
+                        type="video/mp4">
+
+
+
+                Seu navegador não suporta vídeos.
+
+
+
+            </video>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <!-- ==========================================================
+
+         SOBRE O PROJETO
+
+         ========================================================== -->
+
+
+
+    <section id="sobre" class="container">
+
+
+
+        <h2>
+
+
+
+            <i class="fa-solid fa-scroll"></i>
+
+
+
+            Sobre o Projeto
+
+
+
+        </h2>
+
+
+
+
+
+        <p class="subtitle">
+
+
+
+            Conheça os principais elementos que fazem parte
+
+            da experiência de Ronin.
+
+
+
+        </p>
+
+
+
+
+
+        <div class="cards-grid">
+
+
+
+
+
+            <!-- CARD 1 -->
+
+            <a href="detalhes.html?tema=exploracao"
+
+               class="card-link">
+
+
+
+                <div class="card">
+
+
+
+                    <i class="fa-solid fa-map-location-dot icon"></i>
+
+
+
+                    <h3>
+
+                        Exploração do Mundo
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Explore diferentes áreas do mapa,
+
+                        atravesse caminhos e descubra novos
+
+                        locais durante sua jornada.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </a>
+
+
+
+
+
+            <!-- CARD 2 -->
+
+            <a href="detalhes.html?tema=combate"
+
+               class="card-link">
+
+
+
+                <div class="card">
+
+
+
+                    <i class="fa-solid fa-khanda icon"></i>
+
+
+
+                    <h3>
+
+                        Sistema de Combate
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Enfrente inimigos utilizando ataques
+
+                        com espada enquanto avança pelo mundo
+
+                        de Ronin.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </a>
+
+
+
+
+
+            <!-- CARD 3 -->
+
+            <a href="detalhes.html?tema=cavernas"
+
+               class="card-link">
+
+
+
+                <div class="card">
+
+
+
+                    <i class="fa-solid fa-mountain icon"></i>
+
+
+
+                    <h3>
+
+                        Cavernas e Desafios
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Entre em cavernas, encontre obstáculos
+
+                        e explore ambientes diferentes durante
+
+                        sua aventura.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </a>
+
+
+
+
+
+            <!-- CARD 4 -->
+
+            <a href="detalhes.html?tema=inimigos"
+
+               class="card-link">
+
+
+
+                <div class="card">
+
+
+
+                    <i class="fa-solid fa-skull-crossbones icon"></i>
+
+
+
+                    <h3>
+
+                        Inimigos e Batalhas
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Enfrente adversários pelo caminho
+
+                        e utilize seus ataques para superar
+
+                        os confrontos.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </a>
+
+
+
+
+
+            <!-- CARD 5 -->
+
+            <a href="detalhes.html?tema=personagem"
+
+               class="card-link">
+
+
+
+                <div class="card">
+
+
+
+                    <i class="fa-solid fa-heart-pulse icon"></i>
+
+
+
+                    <h3>
+
+                        Vida e Energia
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Acompanhe os indicadores do personagem
+
+                        e tome cuidado durante os confrontos.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </a>
+
+
+
+
+
+            <!-- CARD 6 -->
+
+            <a href="detalhes.html?tema=ambiente"
+
+               class="card-link">
+
+
+
+                <div class="card">
+
+
+
+                    <i class="fa-solid fa-tree icon"></i>
+
+
+
+                    <h3>
+
+                        Ambiente e Cenários
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Descubra cenários com florestas,
+
+                        montanhas, cavernas e paisagens
+
+                        inspiradas no Japão Feudal.
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </a>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <!-- ==========================================================
+
+         GALERIA
+
+         ========================================================== -->
+
+
+
+    <section id="galeria" class="container">
+
+
+
+        <h2>
+
+
+
+            <i class="fa-solid fa-camera"></i>
+
+
+
+            Galeria de Capturas
+
+
+
+        </h2>
+
+
+
+
+
+        <p class="subtitle">
+
+
+
+            Confira algumas imagens dos personagens,
+
+            ambientes e dimensões do jogo.
+
+
+
+        </p>
+
+
+
+
+
+        <div class="gallery-grid">
+
+
+
+
+
+            <!-- ==================================================
+
+                 IMAGEM 1
+
+                 ================================================== -->
+
+
+
+            <div class="gallery-card">
+
+
+
+                <img src="galeria-1.img/armadura dourada.jpeg"
+
+                     alt="Ronin com Armadura Dourada"
+
+                     onclick="expandirImagem(this.src)">
+
+
+
+                <span>
+
+                    Armadura do Guerreiro
+
+                </span>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- ==================================================
+
+                 IMAGEM 2
+
+                 ================================================== -->
+
+
+
+            <div class="gallery-card">
+
+
+
+                <img src="dimensão.img/portal-gelo.png"
+
+                     alt="Dimensão Gelada"
+
+                     onclick="expandirImagem(this.src)">
+
+
+
+                <span>
+
+                    Dimensão Gelada
+
+                </span>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- ==================================================
+
+                 IMAGEM 3
+
+                 ================================================== -->
+
+
+
+            <div class="gallery-card">
+
+
+
+                <img src="dimensao-2.img/portal.png"
+
+                     alt="Portal de Transição"
+
+                     onclick="expandirImagem(this.src)">
+
+
+
+                <span>
+
+                    Portal de Transição
+
+                </span>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- ==================================================
+
+                 IMAGEM 4
+
+                 ================================================== -->
+
+
+
+            <div class="gallery-card">
+
+
+
+                <img src="santuario.img/santuario.png"
+
+                     alt="Santuário do Lago"
+
+                     onclick="expandirImagem(this.src)">
+
+
+
+                <span>
+
+                    Santuário do Lago
+
+                </span>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- ==================================================
+
+                 IMAGEM 5
+
+                 ================================================== -->
+
+
+
+            <div class="gallery-card">
+
+
+
+                <img src="floresta.img/floresta.png"
+
+                     alt="Floresta do Guerreiro"
+
+                     onclick="expandirImagem(this.src)">
+
+
+
+                <span>
+
+                    Floresta do Guerreiro
+
+                </span>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- ==================================================
+
+                 IMAGEM 6
+
+                 ================================================== -->
+
+
+
+            <div class="gallery-card">
+
+
+
+                <img src="templo.img/templo.png"
+
+                     alt="Templo Samurai"
+
+                     onclick="expandirImagem(this.src)">
+
+
+
+                <span>
+
+                    Templo Samurai
+
+                </span>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <!-- ==========================================================
+
+         MODAL DO JOGO
+
+         ========================================================== -->
+
+
+
+    <div id="modal-jogo"
+
+         class="modal">
+
+
+
+        <div class="modal-content">
+
+
+
+            <div class="modal-header">
+
+
+
+                <h3>
+
+
+
+                    <i class="fa-solid fa-gamepad"></i>
+
+
+
+                    RONIN - WEBGRAPHICS CANVAS
+
+
+
+                </h3>
+
+
+
+
+
+                <button class="close-btn"
+
+                        onclick="fecharJogo()">
+
+
+
+                    &times;
+
+
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="game-container">
+
+
+
+                <canvas id="gameCanvas"
+
+                        width="800"
+
+                        height="450">
+
+                </canvas>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="controls-info">
+
+
+
+                <span>
+
+
+
+                    <i class="fa-solid fa-keyboard"></i>
+
+
+
+                    <strong>Movimento:</strong>
+
+
+
+                    WASD ou Setas
+
+
+
+                </span>
+
+
+
+
+
+                <span>
+
+
+
+                    <i class="fa-solid fa-hand-fist"></i>
+
+
+
+                    <strong>Ataque:</strong>
+
+
+
+                    Espaço
+
+
+
+                </span>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- ==========================================================
+
+         MODAL DA GALERIA
+
+         ========================================================== -->
+
+
+
+    <div id="modal-img"
+
+         class="modal"
+
+         onclick="fecharImagem()">
+
+
+
+        <!-- Botão fechar -->
+
+        <span class="close-btn-img"
+
+              onclick="fecharImagem(event)">
+
+
+
+            &times;
+
+
+
+        </span>
+
+
+
+
+
+        <!-- Imagem ampliada -->
+
+        <img id="img-ampliada"
+
+             src=""
+
+             alt="Captura ampliada"
+
+             onclick="event.stopPropagation()">
+
+
+
+    </div>
+
+
+
+
+
+    <!-- ==========================================================
+
+         JAVASCRIPT
+
+         ========================================================== -->
+
+
+
+    <script src="game.js"></script>
+
+
+
+    <script src="main.js"></script>
+
+
+
+
+
+    <!-- ==========================================================
+
+         JAVASCRIPT DA GALERIA
+
+         ========================================================== -->
+
+
+
+    <script>
+
+
+
+        // ======================================================
+
+        // ABRIR IMAGEM
+
+        // ======================================================
+
+
+
+        function expandirImagem(src) {
+
+
+
+            const modal = document.getElementById("modal-img");
+
+
+
+            const imagem = document.getElementById("img-ampliada");
+
+
+
+
+
+            // Coloca a imagem clicada dentro do modal
+
+            imagem.src = src;
+
+
+
+
+
+            // Mostra o modal
+
+            modal.style.display = "flex";
+
+
+
+
+
+            // Impede a página de rolar enquanto a imagem estiver aberta
+
+            document.body.style.overflow = "hidden";
+
+
+
+        }
+
+
+
+
+
+        // ======================================================
+
+        // FECHAR IMAGEM
+
+        // ======================================================
+
+
+
+        function fecharImagem(event) {
+
+
+
+            // Evita que o clique no botão X seja interpretado
+
+            // duas vezes
+
+            if (event) {
+
+
+
+                event.stopPropagation();
+
+
+
+            }
+
+
+
+
+
+            const modal = document.getElementById("modal-img");
+
+
+
+
+
+            // Esconde o modal
+
+            modal.style.display = "none";
+
+
+
+
+
+            // Libera a rolagem da página
+
+            document.body.style.overflow = "auto";
+
+
+
+
+
+            // Limpa a imagem
+
+            document.getElementById("img-ampliada").src = "";
+
+
+
+        }
+
+
+
+
+
+        // ======================================================
+
+        // FECHAR COM ESC
+
+        // ======================================================
+
+
+
+        document.addEventListener("keydown", function(event) {
+
+
+
+            if (event.key === "Escape") {
+
+
+
+                fecharImagem();
+
+
+
+            }
+
+
+
+        });
+
+
+
+    </script>
+
+
+
+
+
+    <!-- ==========================================================
+
+         CSS DO MODAL DA GALERIA
+
+         ========================================================== -->
+
+
+
+    <style>
+
+
+
+        /* ======================================================
+
+           IMAGENS DA GALERIA
+
+           ====================================================== */
+
+
+
+        .gallery-card img {
+
+
+
+            cursor: zoom-in;
+
+
+
+            transition:
+
+                transform 0.3s ease,
+
+                filter 0.3s ease;
+
+
+
+        }
+
+
+
+
+
+        .gallery-card img:hover {
+
+
+
+            transform: scale(1.03);
+
+
+
+            filter: brightness(1.1);
+
+
+
+        }
+
+
+
+
+
+        /* ======================================================
+
+           MODAL
+
+           ====================================================== */
+
+
+
+        #modal-img {
+
+
+
+            display: none;
+
+
+
+            position: fixed;
+
+
+
+            top: 0;
+
+            left: 0;
+
+
+
+            width: 100%;
+
+            height: 100%;
+
+
+
+            background: rgba(0, 0, 0, 0.93);
+
+
+
+            z-index: 99999;
+
+
+
+            align-items: center;
+
+            justify-content: center;
+
+
+
+            padding: 40px;
+
+
+
+            cursor: zoom-out;
+
+
+
+        }
+
+
+
+
+
+        /* ======================================================
+
+           IMAGEM AMPLIADA
+
+           ====================================================== */
+
+
+
+        #img-ampliada {
+
+
+
+            max-width: 90%;
+
+
+
+            max-height: 90vh;
+
+
+
+            width: auto;
+
+
+
+            height: auto;
+
+
+
+            object-fit: contain;
+
+
+
+            border-radius: 12px;
+
+
+
+            box-shadow:
+
+                0 0 40px rgba(0, 0, 0, 0.8);
+
+
+
+            cursor: default;
+
+
+
+            animation: aparecerImagem 0.3s ease;
+
+
+
+        }
+
+
+
+
+
+        /* ======================================================
+
+           BOTÃO X
+
+           ====================================================== */
+
+
+
+        .close-btn-img {
+
+
+
+            position: absolute;
+
+
+
+            top: 20px;
+
+
+
+            right: 35px;
+
+
+
+            color: white;
+
+
+
+            font-size: 50px;
+
+
+
+            font-weight: bold;
+
+
+
+            line-height: 1;
+
+
+
+            cursor: pointer;
+
+
+
+            z-index: 100000;
+
+
+
+            transition:
+
+                color 0.2s ease,
+
+                transform 0.2s ease;
+
+
+
+        }
+
+
+
+
+
+        .close-btn-img:hover {
+
+
+
+            color: #ffcc00;
+
+
+
+            transform: scale(1.15);
+
+
+
+        }
+
+
+
+
+
+        /* ======================================================
+
+           ANIMAÇÃO DA IMAGEM
+
+           ====================================================== */
+
+
+
+        @keyframes aparecerImagem {
+
+
+
+            from {
+
+
+
+                opacity: 0;
+
+
+
+                transform: scale(0.75);
+
+
+
+            }
+
+
+
+            to {
+
+
+
+                opacity: 1;
+
+
+
+                transform: scale(1);
+
+
+
+            }
+
+
+
+        }
+
+
+
+
+
+        /* ======================================================
+
+           RESPONSIVO
+
+           ====================================================== */
+
+
+
+        @media (max-width: 768px) {
+
+
+
+            #modal-img {
+
+
+
+                padding: 20px;
+
+
+
+            }
+
+
+
+
+
+            #img-ampliada {
+
+
+
+                max-width: 95%;
+
+
+
+                max-height: 85vh;
+
+
+
+            }
+
+
+
+
+
+            .close-btn-img {
+
+
+
+                top: 15px;
+
+
+
+                right: 20px;
+
+
+
+                font-size: 40px;
+
+
+
+            }
+
+
+
+        }
+
+
+
+    </style>
+
+
+
+
+
+</body>
+
+</html>
