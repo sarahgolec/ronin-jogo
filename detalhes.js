@@ -2,13 +2,11 @@
 // RONIN - SISTEMA DE PÁGINAS DE DETALHES
 // ============================================================
 
-
 // Pega o parâmetro "tema" da URL
 
 const parametros = new URLSearchParams(window.location.search);
 
 const tema = parametros.get("tema");
-
 
 // ============================================================
 // CONTEÚDO DOS TEMAS
@@ -49,8 +47,7 @@ const conteudos = {
             "O jogador percorre o mapa utilizando os controles do personagem. Durante o caminho, pode encontrar florestas, montanhas, cavernas, templos e outras áreas inspiradas no Japão Feudal."
     },
 
-
-    // ========================================================
+// ========================================================
     // COMBATE
     // ========================================================
 
@@ -83,8 +80,7 @@ const conteudos = {
             "Durante os confrontos, o jogador deve movimentar o personagem e utilizar o ataque para enfrentar os inimigos. A combinação entre movimentação e ataque permite avançar pelas diferentes áreas do jogo."
     },
 
-
-    // ========================================================
+// ========================================================
     // CAVERNAS
     // ========================================================
 
@@ -117,8 +113,7 @@ const conteudos = {
             "O jogador deve explorar as cavernas, observar os caminhos disponíveis e avançar pelo ambiente. A mudança de cenário ajuda a criar variedade durante a aventura."
     },
 
-
-    // ========================================================
+// ========================================================
     // INIMIGOS
     // ========================================================
 
@@ -151,8 +146,7 @@ const conteudos = {
             "Ao encontrar adversários, o jogador precisa utilizar a movimentação e os ataques do personagem para enfrentar os confrontos e continuar sua jornada pelo mundo."
     },
 
-
-    // ========================================================
+// ========================================================
     // VIDA
     // ========================================================
 
@@ -185,8 +179,7 @@ const conteudos = {
             "O jogador deve prestar atenção aos indicadores apresentados durante a aventura. Evitar sofrer muitos ataques ajuda o personagem a permanecer ativo durante a exploração."
     },
 
-
-    // ========================================================
+// ========================================================
     // AMBIENTE
     // ========================================================
 
@@ -221,13 +214,11 @@ const conteudos = {
 
 };
 
-
 // ============================================================
 // VERIFICA SE O TEMA EXISTE
 // ============================================================
 
 const dados = conteudos[tema] || conteudos.exploracao;
-
 
 // ============================================================
 // ALTERA O CONTEÚDO DA PÁGINA
@@ -236,34 +227,26 @@ const dados = conteudos[tema] || conteudos.exploracao;
 document.title =
     "RONIN - " + dados.titulo;
 
-
 document.getElementById("tema-titulo").textContent =
     dados.titulo;
-
 
 document.getElementById("tema-subtitulo").textContent =
     dados.subtitulo;
 
-
 document.getElementById("tema-secao").textContent =
     dados.secao;
-
 
 document.getElementById("tema-descricao").textContent =
     dados.descricao;
 
-
 document.getElementById("tema-experiencia").textContent =
     dados.experiencia;
-
 
 document.getElementById("tema-destaque").textContent =
     dados.destaque;
 
-
 document.getElementById("tema-como-funciona").textContent =
     dados.comoFunciona;
-
 
 // ============================================================
 // ALTERA ÍCONE
@@ -272,7 +255,6 @@ document.getElementById("tema-como-funciona").textContent =
 const icone = document.getElementById("tema-icone");
 
 icone.className = dados.icone;
-
 
 // ============================================================
 // ALTERA IMAGEM

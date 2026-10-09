@@ -7,6 +7,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Saiba mais sobre os cenários, o combate e a aventura de Ronin: O Caminho do Guerreiro.">
+
+    <meta name="theme-color" content="#0b0d11">
+
     <title>RONIN - Detalhes</title>
 
     <link rel="icon"
@@ -24,42 +28,31 @@
 
 </head>
 
-
 <body>
 
-
-    <!-- =====================================================
+<!-- =====================================================
          SAKURA
          ===================================================== -->
 
     <canvas id="sakuraCanvas"></canvas>
 
-
-    <!-- =====================================================
+<!-- =====================================================
          NAVBAR
          ===================================================== -->
 
-    <nav class="navbar">
+    <nav class="navbar" id="inicio">
 
-        <div class="logo">
-
-            <img src="logo-ronin.img/logo.png"
-                 alt="Logo SENAI"
-                 class="senai-logo"
-                 onerror="this.style.display='none'">
-
+        <a class="logo" href="index.html#inicio" aria-label="Ronin — voltar ao início">
             <span class="senai-badge">
                 SENAI
             </span>
 
-            <span class="game-title">
-              
-            </span>
+            <img src="capa-logo.img/icone_ronin.png"
+                 alt="Símbolo de Ronin">
 
-        </div>
+        </a>
 
-
-        <ul class="nav-links">
+<ul class="nav-links" id="menu-principal">
 
             <li>
                 <a href="index.html#inicio">
@@ -87,30 +80,34 @@
 
         </ul>
 
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+            <span></span><span></span><span></span>
+        </button>
 
-        <a href="https://drive.google.com/drive/folders/18boa3KaS38dM6yq_KR6sW7Q8WxPp-STQ?usp=drive_link"
+<a href="https://drive.google.com/drive/folders/18boa3KaS38dM6yq_KR6sW7Q8WxPp-STQ?usp=drive_link"
            target="_blank"
+           rel="noopener noreferrer"
            class="btn-primary">
 
-            <i class="fa-solid fa-gamepad"></i>
+            <i class="fa-solid fa-play"></i>
 
-            JOGAR AGORA
+            Jogar agora
 
         </a>
 
     </nav>
 
-
-    <!-- =====================================================
+<!-- =====================================================
          CONTEÚDO
          ===================================================== -->
 
     <main class="detalhes-container">
 
-
-        <!-- CABEÇALHO -->
+<!-- CABEÇALHO -->
 
         <header class="detalhes-header">
+
+            <span class="detalhes-eyebrow">UNIVERSO RONIN</span>
 
             <span class="sub-kanji" id="tema-kanji">
                 侍の道
@@ -126,8 +123,7 @@
 
         </header>
 
-
-        <!-- IMAGEM -->
+<!-- IMAGEM -->
 
         <div class="detalhes-imagem">
 
@@ -137,8 +133,7 @@
 
         </div>
 
-
-        <!-- TEXTO PRINCIPAL -->
+<!-- TEXTO PRINCIPAL -->
 
         <section class="detalhes-texto">
 
@@ -149,18 +144,15 @@
 
             </div>
 
-
-            <h2 id="tema-secao">
+<h2 id="tema-secao">
                 Sobre este elemento
             </h2>
 
-
-            <p id="tema-descricao">
+<p id="tema-descricao">
                 Carregando informações...
             </p>
 
-
-            <!-- INFORMAÇÕES -->
+<!-- INFORMAÇÕES -->
 
             <div class="informacoes-grid">
 
@@ -182,8 +174,7 @@
 
                 </div>
 
-
-                <div class="info-box">
+<div class="info-box">
 
                     <i class="fa-solid fa-star"></i>
 
@@ -201,11 +192,9 @@
 
                 </div>
 
+</div>
 
-            </div>
-
-
-            <!-- COMO FUNCIONA -->
+<!-- COMO FUNCIONA -->
 
             <h2 class="subtitulo-detalhes">
 
@@ -215,13 +204,11 @@
 
             </h2>
 
-
-            <p id="tema-como-funciona">
+<p id="tema-como-funciona">
                 Informações sobre o elemento do jogo.
             </p>
 
-
-            <!-- VOLTAR -->
+<!-- VOLTAR -->
 
             <div class="detalhes-voltar">
 
@@ -240,15 +227,19 @@
 
     </main>
 
+    <footer class="site-footer">
+        <a href="index.html#inicio" class="footer-brand">RONIN <span>侍の道</span></a>
+        <p>O caminho do guerreiro começa com um passo.</p>
+    </footer>
 
-    <!-- =====================================================
+<!-- =====================================================
          JAVASCRIPT
          ===================================================== -->
 
+    <script src="game.js"></script>
     <script src="detalhes.js"></script>
 
     <script src="main.js"></script>
-
 
 </body>
 
